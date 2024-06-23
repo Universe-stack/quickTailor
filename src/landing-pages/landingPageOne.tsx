@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ModeToggle";
 import HeroOne from "@/components/hero/HeroOne";
+import LogocloudOne from "@/components/logoCloud/LogocloudOne";
+import FeaturesOne from "@/components/features/FeaturesOne";
 
 export default function LandingPageOne() {
 
@@ -10,7 +12,8 @@ export default function LandingPageOne() {
    <section className="w-[100%] flex justify-center">
         <div className="w-[80%] self-center">
             <HeroOne />
-        
+            <LogocloudOne />
+            <FeaturesOne />
         </div>
    </section>
   );

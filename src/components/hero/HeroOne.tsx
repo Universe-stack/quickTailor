@@ -1,26 +1,32 @@
 'use client'
 import React from 'react'
+import { useTheme } from "next-themes"
+
+
+
 
 type Props = {}
 
 const HeroOne = (props: Props) => {
+
+  const {theme}=useTheme()
+  const sectionClasses = `${theme === 'dark' ? 'text-[#fff] bg-transparent' : 'bg-white text-black '}`;
+
   return (
-        <div className="">
-
-
+        <div className={sectionClasses}>
         <section className="py-10 sm:py-16 lg:py-24">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
                     <div>
-                        <h1 className="text-3xl font-bold text-black sm:text-6xl lg:text-6xl">
+                        <h1 className="text-3xl font-bold  sm:text-6xl lg:text-6xl">
                             Collaborate remotely, with
                             <div className="relative inline-flex">
                                 <span className="absolute inset-x-0 bottom-0 border-b-[30px] border-bg-blue-700"></span>
-                                <h1 className="relative text-4xl font-bold text-black sm:text-6xl lg:text-6xl">ShipToday.</h1>
+                                <h1 className="relative text-4xl font-bold  sm:text-6xl lg:text-6xl">ShipToday.</h1>
                             </div>
                         </h1>
 
-                        <p className="mt-8 leading-[1.5rem] text-[1rem] text-black sm:text-[1rem]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
+                        <p className="mt-8 leading-[1.5rem] text-[1rem]  sm:text-[1rem]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
 
                         <div className="mt-10 sm:flex sm:items-center sm:space-x-8">
                             <a href="#" title="" className="inline-flex items-center justify-center px-10 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 hover:bg-blue-600 focus:bg-blue-600" role="button"> Start exploring </a>

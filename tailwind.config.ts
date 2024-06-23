@@ -24,6 +24,9 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
+        shiptodayBlack:"#000",
+        shiptodayWhite:"#fff",
+        shipTodayGray:"#f2f2f2",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
