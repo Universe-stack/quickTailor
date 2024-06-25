@@ -24,13 +24,16 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
-        shiptodayBlack:"#000",
+        shiptodayOrange:"#ff4d0b",
+        shiptodayGrayLight:"#f7f4eb",
+        shiptodayBlue:"#007ed9",
+        shiptodayBlack:"#101010",
         shiptodayWhite:"#fff",
         shipTodayGray:"#f2f2f2",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: "#101010",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",

@@ -16,7 +16,7 @@ const HeaderTwo = () => {
                     <div className="lg:inset-y-5">
                         <div className="flex-shrink-0">
                             <a href="#" title="" className="flex">
-                                <img className="w-full h-8 lg:h-10" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" />
+                                <img className="w-full h-[6rem] lg:h-[10rem]  overflow-hidden" src={`${theme === 'dark' ? 'https://res.cloudinary.com/dck5v2kub/image/upload/v1719289124/shipToday/shiptoday_.__1_-removebg-preview_hocnln.png':'https://res.cloudinary.com/dck5v2kub/image/upload/v1719288930/shipToday/shiptoday_.-removebg-preview_hme86l.png'}`} alt="" />
                             </a>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ const HeaderTwo = () => {
                         <a href="#" title="" className="py-2 text-base font-medium  transition-all duration-200 focus:text-blue-600"> Pricing </a>
                     </div>
 
-                    <hr className="my-4 border-gray-200" />
+                    <hr className="my-4 border-gray-200 z-1" />
 
                     <div className="flex flex-col space-y-2">
                         <a href="#" title="" className="py-2 text-base font-medium  transition-all duration-200 focus:text-blue-600"> Sign up </a>
