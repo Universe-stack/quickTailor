@@ -2,11 +2,12 @@
 import React from 'react'
 import { ModeToggle } from '../ModeToggle'
 import { useTheme } from "next-themes"
+import Link from 'next/link'
 
 const HeaderTwo = () => {
 
     const {theme}=useTheme()
-    const sectionClasses = `${theme === 'dark' ? 'text-[#fff] bg-transparent' : 'bg-white text-black '} w-[100vw] flex justify-center border-b border-gray-200`;
+    const sectionClasses = `${theme === 'dark' ? 'text-[#fff] bg-transparent' : 'bg-white text-black '} w-[100vw] flex justify-center border-b border-shiptodayGray`;
   return (
         <header className={sectionClasses}>
         <div className="  w-[85%] self-center">
@@ -15,9 +16,9 @@ const HeaderTwo = () => {
                     
                     <div className="lg:inset-y-5">
                         <div className="flex-shrink-0">
-                            <a href="#" title="" className="flex">
+                            <Link href="/" title="" className="flex">
                                 <img className="w-full h-[6rem] lg:h-[10rem]  overflow-hidden" src={`${theme === 'dark' ? 'https://res.cloudinary.com/dck5v2kub/image/upload/v1719289124/shipToday/shiptoday_.__1_-removebg-preview_hocnln.png':'https://res.cloudinary.com/dck5v2kub/image/upload/v1719288930/shipToday/shiptoday_.-removebg-preview_hme86l.png'}`} alt="" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     
@@ -26,9 +27,9 @@ const HeaderTwo = () => {
 
                         <a href="#" title="" className="text-base font-medium "> Solutions </a>
 
-                        <a href="#" title="" className="text-base font-medium "> Resources </a>
-
                         <a href="#" title="" className="text-base font-medium "> Pricing </a>
+
+                        <a href="#" title="" className="text-base font-medium "> Blog</a>
                     </div>
 
 

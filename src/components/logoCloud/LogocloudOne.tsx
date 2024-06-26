@@ -7,7 +7,7 @@ type Props = {}
 const LogocloudOne = (props: Props) => {
 
     const {theme} =useTheme()
-    const sectionClasses = `${theme === 'dark' ? 'text-[#fff] bg-shiptodayBlack w-full w-full flex justify-center' : 'bg-shiptodayWhite text-black w-full flex justify-center'}`;
+    const sectionClasses = `${theme === 'dark' ? 'text-[#fff] bg-shiptodayBlack w-full w-full flex justify-center' : 'bg-shiptodayGrayLight text-black w-full flex justify-center'}`;
     const titleClasses = `${theme === 'dark' ? 'text-xl font-medium text-shiptodayWhite': 'text-xl font-medium text-shiptodayBlack' }`
 
   return (

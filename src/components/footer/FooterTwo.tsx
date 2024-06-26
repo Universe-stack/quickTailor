@@ -10,14 +10,14 @@ const FooterTwo = (props: Props) => {
   const {theme} = useTheme()
  
 
-  const sectionClasses = `py-10 ${theme === 'dark' ? 'text-[#000] bg-[#f2f2f2]' : 'bg-[#f2f2f2] text-black'} sm:pt-16 lg:pt-24`;
+  const sectionClasses = `py-10 ${theme === 'dark' ? 'text-[#000] bg-transparent text-shiptodayGrayLight border backdrop-blur-2xl bg-[#A9A9A9]/5' : 'bg-[#f2f2f2] text-black'} sm:pt-16 lg:pt-24`;
 
   return (
         <section className={sectionClasses}>
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12">
                 <div className="col-span-2 md:col-span-4 xl:pr-8">
-                    <img className="w-auto h-9" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" />
+                <img className="h-[8rem] lg:h-[10rem] mt-[-5rem] overflow-hidden" src={`${theme === 'dark' ? 'https://res.cloudinary.com/dck5v2kub/image/upload/v1719289124/shipToday/shiptoday_.__1_-removebg-preview_hocnln.png':'https://res.cloudinary.com/dck5v2kub/image/upload/v1719288930/shipToday/shiptoday_.-removebg-preview_hme86l.png'}`} alt="" />
 
                     <p className="text-base leading-relaxed opacity-[70%] mt-7">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
 
