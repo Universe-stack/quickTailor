@@ -3,7 +3,9 @@ import React from 'react'
 import { ModeToggle } from '../ModeToggle'
 import { useTheme } from "next-themes"
 import Link from 'next/link'
+import {NavigationMenuDemo} from '../navMenu/Navmenu'
 
+  
 const HeaderTwo = () => {
 
     const {theme}=useTheme()
@@ -22,14 +24,8 @@ const HeaderTwo = () => {
                         </div>
                     </div>
                     
-                    <div className="hidden lg:flex lg:items-center lg:space-x-10">
-                        <a href="#" title="" className="text-base font-medium "> Features </a>
-
-                        <a href="#" title="" className="text-base font-medium "> Solutions </a>
-
-                        <a href="#" title="" className="text-base font-medium "> Pricing </a>
-
-                        <a href="#" title="" className="text-base font-medium "> Blog</a>
+                    <div className ="">
+                        <NavigationMenuDemo />
                     </div>
 
 
